@@ -23,8 +23,8 @@ const Card: React.FC<ICard> = ({ title, description, image, value }) => {
   };
 
   return (
-    <MuiCard sx={{ maxWidth: 345, minHeight: 380, background: "#484848" }}>
-      <CardActionArea onClick={handleClickCard}>
+    <CardActionArea onClick={handleClickCard}>
+      <MuiCard sx={{ maxWidth: 345, minHeight: 400, background: "#484848" }}>
         <CardMedia
           component="img"
           height="250"
@@ -39,8 +39,8 @@ const Card: React.FC<ICard> = ({ title, description, image, value }) => {
             {description}
           </Typography>
         </CardContent>
-      </CardActionArea>
-    </MuiCard>
+      </MuiCard>
+    </CardActionArea>
   );
 };
 

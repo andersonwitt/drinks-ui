@@ -30,30 +30,40 @@ export const categories = [
         details:
           "Originalmente, essas bebidas eram vendidas em farmácias para uso medicinal, descritas para aliviar doenças renais, gota ou cálculos biliares. Dessa forma, dependendo de como era destilado, o álcool resultante tinha gosto semelhante ao de vodca ou uísque.",
       },
-      {
-        id: "4",
-        image:
-          "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Apple-Amaretto-Sours_EXPS_THCA18_188779_C01_23_3b.jpg",
-        title: "Amaretto Apple",
-        description: "Amaretto Apple",
-        details:
-          "Amaretto é um popular licor de amêndoa que é usado em uma variedade de coquetéis e bebidas mistas. É comumente emparelhado com um licor de café ou usado como um licor calmante para domar a mordida de muitos atiradores . Amaretto deve ser considerado um espírito essencial para estocar no bar .",
-      },
-      {
-        id: "5",
-        image:
-          "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/bloody-mary-a2983ba.jpg",
-        title: "Bloddy Mary",
-        description: "Bloddy Mary",
-        details: `A origem do coquetel Bloody Mary não é certa. Ninguém sabe exatamente quem, quando ou onde foi inventado.
-          Uma história diz que a criação se dá na década de  1920, em Paris. O bartender Fernand Petiot teria recebido o pedido de americanos para fazer um drink com aparência e aroma que pudessem disfarçar o álcool. Eles queriam levar a bebida de volta aos Estados Unidos sem problemas, já que o país passava pela Lei Seca na época.
-          Outra teoria aponta que o criador verdadeiro é George Hessel, uma estrela de Hollywood dentre os anos 1920 e 1950.
-          O nome do drink também tem algumas versões. Alguns dizem que a homenagem foi à Mary Pickford, uma atriz do cinema mudo. Outros falam que o nome é de uma garçonete do bar Bucket of Blood, em Chicago. Os clientes teriam a apelidado de Bloody Mary.
-          Mas a maioria dos apreciadores da bebida não têm dúvidas de que a inspiração é a Rainha Maria I da Inglaterra. A composição e estética do drink muito se remetem à monarca britânica: destemida e furiosa.`,
-      },
+      // {
+      //   id: "4",
+      //   image:
+      //     "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Apple-Amaretto-Sours_EXPS_THCA18_188779_C01_23_3b.jpg",
+      //   title: "Amaretto Apple",
+      //   description: "Amaretto, suco de maçã",
+      //   details:
+      //     "Amaretto é um popular licor de amêndoa que é usado em uma variedade de coquetéis e bebidas mistas. É comumente emparelhado com um licor de café ou usado como um licor calmante para domar a mordida de muitos atiradores . Amaretto deve ser considerado um espírito essencial para estocar no bar .",
+      // },
+      // {
+      //   id: "5",
+      //   image:
+      //     "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/bloody-mary-a2983ba.jpg",
+      //   title: "Bloody Mary",
+      //   description: "Suco de tomate, vodka, sal, pimenta, hortelã",
+      //   details: `A origem do coquetel Bloody Mary não é certa. Ninguém sabe exatamente quem, quando ou onde foi inventado.
+      //     Uma história diz que a criação se dá na década de  1920, em Paris. O bartender Fernand Petiot teria recebido o pedido de americanos para fazer um drink com aparência e aroma que pudessem disfarçar o álcool. Eles queriam levar a bebida de volta aos Estados Unidos sem problemas, já que o país passava pela Lei Seca na época.
+      //     Outra teoria aponta que o criador verdadeiro é George Hessel, uma estrela de Hollywood dentre os anos 1920 e 1950.
+      //     O nome do drink também tem algumas versões. Alguns dizem que a homenagem foi à Mary Pickford, uma atriz do cinema mudo. Outros falam que o nome é de uma garçonete do bar Bucket of Blood, em Chicago. Os clientes teriam a apelidado de Bloody Mary.
+      //     Mas a maioria dos apreciadores da bebida não têm dúvidas de que a inspiração é a Rainha Maria I da Inglaterra. A composição e estética do drink muito se remetem à monarca britânica: destemida e furiosa.`,
+      // },
     ],
   },
   //   { value: "2", label: "Coqueteis", items: [] },
   //   { value: "3", label: "Shots", items: [] },
-  //   { value: "4", label: "Mocktails", items: [] },
+  { value: "4", label: "Mocktails", items: [
+    {
+      id: "6",
+      image:
+        "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2007/3/13/0/gi0206_mojito.jpg.rend.hgtvcom.616.462.suffix/1371585551748.jpeg",
+      title: "Apple Mojito",
+      description: "Rum Big apple, Citrus, limão, hortelã",
+      details:
+        "Embora suas exatas origens sejam motivo de calorosos debates, a lenda conta que devemos agradecer a invenção do Mojito ao grande navegador Sir Francis Drake. Durante sua Grande Expedição ao Novo mundo, uma epidemia de escorbuto e disenteria assolou seu navio.",
+    }
+  ] },
 ];
