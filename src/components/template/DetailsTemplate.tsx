@@ -1,17 +1,25 @@
 import { useTheme } from "@mui/material";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import { categories } from "../../utils/Db";
 import Image from "../atoms/Image";
 import Description from "../molecules/Description";
 
 const DetailsTemplate = () => {
   const theme = useTheme();
   const { id } = useParams<{ id: string }>();
+  const [drink, setDrink] = useState<any>({});
 
-  const getCurrentDrink = (id: string) =>
-    categories
-      .flatMap((category) => category.items)
-      .find((item) => item.id === id);
+  const getCurrentDrink = async (id: string) => {
+    const response = await fetch(
+      `https://localhost:5001/api/drinks/${id}`
+    ).then((res) => res.json());
+
+    setDrink(response);
+  };
+
+  useEffect(() => {
+    getCurrentDrink(id);
+  }, [id]);
 
   return (
     <>
@@ -22,12 +30,12 @@ const DetailsTemplate = () => {
           marginTop: theme.spacing(9),
         }}
       >
-        <Image src={getCurrentDrink(id)?.image ?? ""} width="100%" />
+        <Image src={drink?.image ?? ""} width="100%" />
       </div>
       <Description
-        title={getCurrentDrink(id)?.title}
-        description={getCurrentDrink(id)?.description}
-        details={getCurrentDrink(id)?.details}
+        title={drink?.title}
+        description={drink?.description}
+        details={drink?.details}
       />
     </>
   );
